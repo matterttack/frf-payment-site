@@ -1,0 +1,37 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="header" style="border-bottom: 3px solid #dddddd">
+  <div class="container">
+    <h4>FRED ROCHE FOUNDATION</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+      <div class="alert alert-success">
+        <%= I18n.t(:purchase_description, scope: [:thankyou], package: I18n.t(:name, scope: [:packages, @package])) %><br/>
+      </div>
+
+      <hr/>
+
+      <h1 class="page-heading centered"><%= I18n.t(:purchase_complete, scope: [:thankyou]) %></h1>
+      <p class="thankyou-heading centered">
+        <%= I18n.t(:thankyou, scope: [:thankyou]) %>
+      </p>
+      <p>
+        <%= I18n.t(:dd_explanation, scope: [:thankyou], amount: @price) %><br/>
+      </p>
+      <p>
+      <%= I18n.t(:first_payment, scope: [:thankyou], date: @first_payment_date) %>
+      </p>
+      <br/>
+      <a href="/" class="btn btn--hollow"><%= I18n.t(:addition_subscription, scope: [:thankyou]) %></a>
+    <hr/>
+  </div>
+
+  <footer>
+    <center>
+      <%= I18n.t(:breadcrumb) %>
+    </center>
+  </footer>
+</div>
