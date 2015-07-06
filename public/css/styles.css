@@ -26,7 +26,7 @@ body {
 .thankyou-heading {
 	margin-bottom: 20px;
     color: #141E27;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -60,6 +60,7 @@ body {
     background-color: #498EE0;
     border-color: #498EE0;
     border-radius: 3px;
+    color: #009966;
     font-size: 12px;
     font-family: "Gotham SSm A", "Gotham SSm B", Arial, sans-serif;
     font-weight: 500;

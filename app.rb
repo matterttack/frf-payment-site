@@ -139,7 +139,7 @@ get '/thankyou' do
                     when "EUR" then "€"
                     end
   @price = "#{currency_symbol}#{"%.2f" % PACKAGE_PRICES[package][currency]}"
-  @first_payment_date = subscription.upcoming_payments.first[:charge_date]
+  @first_payment_date = subscription.upcoming_payments.first['charge_date']
   @package = package
 
   erb :thankyou

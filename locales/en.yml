@@ -18,6 +18,7 @@ en:
     purchase_description: Your annual subscription (%{package}) was successful.
     purchase_complete: Subscription Complete
     thankyou: Thank you for becomming a friend of the Fred Roche Foundation
-    dd_explanation: We've set up a direct debit and a subscription for %{amount}/year, you should receive an email shortly
+    dd_explanation: We've set up a direct debit and a subscription for %{amount}/year, you should receive an email confirming this shortly.
     first_payment: Your first payment will be billed on %{date}
-    additional_subscription: Add additional family members.
+    additional_subscription: Add additional family members
+    return: Return to Fred Roche Foundation
