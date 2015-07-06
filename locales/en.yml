@@ -5,7 +5,7 @@ en:
   explanation: To become a friend of the Fred Roche Foundation, please choose your subscription below, and fill in your details. We currently only accept subscription via Direct Debit. We will debit your account on a annual basis from the date you subscribe and will receive an email confirming the amount. Please contact us if your details have changed or you would like to cancel your subscription.
   rent_for: Subscribe for %{amount} a year
   breadcrumb: This transaction is undertaken by GoCardless on behalf of the Fred Roche Foundation.
-  package_description: Annual subscription (%{package})
+  package_description: Annual %{package} subscription (%{amount} a year)
   packages:
     standard:
       name: Standard
