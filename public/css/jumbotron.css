@@ -1,4 +1,7 @@
-
+a, a:hover, a:visited, a:active {
+  color:inherit;
+  text-decoration: none;
+ }
 
 .header,
 .marketing,
@@ -32,7 +35,7 @@
 
 }
 
-.header h4 a {
+.header h4 {
   float: left;
   text-align: left;
   font-size: 1.7em;
