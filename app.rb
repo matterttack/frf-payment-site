@@ -86,6 +86,7 @@ redirect_flow = settings.api_client.redirect_flows.create(
 redirect redirect_flow.redirect_url
 end
 
+
 # Customer returns from GC's payment pages
 get '/payment_complete' do
   package = params[:package]

@@ -1,4 +1,3 @@
-<!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="header" style="border-bottom: 3px solid #dddddd">
   <div class="container">
     <h4>FRED ROCHE FOUNDATION</h4>
@@ -37,7 +36,7 @@
       <p class="centered"><%= I18n.t(:details, scope: [:packages, :standard]) %></p>
       <form action='/purchase' method='post' class="form">
         <input type="hidden" name="package" value="standard"/>
-        <input type="submit" class="btn btn--hollow btn-block" href="#" role="button" value="<%= I18n.t(:rent_for, amount: @prices[:standard]) %>" />
+        <input type="submit" class="btn btn--hollow btn-block" href="#" role="button" value="<%= I18n.t(:button_val, amount: @prices[:standard]) %>" />
       </form>
     </div>
         <div class="col-md-2"></div>
@@ -46,7 +45,7 @@
       <p class="centered"><%= I18n.t(:description, scope: [:packages, :concession]) %></p><br>
       <form action='/purchase' method='post' class="form">
         <input type="hidden" name="package" value="concession"/>
-        <input type="submit" class="btn btn--hollow btn-block" href="#" role="button" value="<%= I18n.t(:rent_for, amount: @prices[:concession]) %>" />
+        <input type="submit" class="btn btn--hollow btn-block" href="#" role="button" value="<%= I18n.t(:button_val, amount: @prices[:concession]) %>" />
       </form>
     </div>
         <div class="col-md-1"></div>

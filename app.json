@@ -1,8 +1,6 @@
 {
-  "name": "GoCardless Pro Ruby Example",
-  "description": "Example Ruby application for collecting recurring payments using GoCardless",
-  "repository": "https://github.com/gocardless/gocardless-pro-ruby-example",
-  "logo": "https://gocardless.com/images/logos/gocardless-square.png",
+  "name": "Fred Roche Foundation Subscription application",
+  "description": "A basic application using the GoCardless client to set-up customer mandates and subscriptions for the Fred Roche Foundation",
   "success_url": "/",
   "env": {
     "GC_API_KEY_ID": {
