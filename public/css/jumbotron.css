@@ -45,13 +45,12 @@ body {
 
 .header h4 {
   float: left;
-  font-family: "Gotham SSm B";
   text-align: left;
   font-size: 1.7em;
   color: #e5e5e5;
   text-transform: uppercase;
   letter-spacing: -1px;
-  font-weight: bold;
+  font-weight: 700;
   padding-left: 100px;
   padding-top: 20px;
 }
