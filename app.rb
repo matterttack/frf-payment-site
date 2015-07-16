@@ -27,8 +27,7 @@ use Rack::Locale
 # Settings
 set :session_secret, 'fredrochefoundationsecret2015'
 set :api_client, GoCardlessPro::Client.new(
-  access_token: Prius.get(:gocardless_token),
-  environment: :sandbox
+  access_token: Prius.get(:gocardless_token)
 )
 
 # Configuration
