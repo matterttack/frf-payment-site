@@ -114,7 +114,8 @@ get '/payment_complete' do
       amount: price[currency] * 100, # Price in pence/cents
       currency: currency,
       name: I18n.t(:package_description, package: package.capitalize),
-      interval_unit: "yearly",
+      interval_unit: "monthly",
+      day_of_month:  "1",
       metadata: {
         order_no: SecureRandom.uuid # Could be anything
       },
