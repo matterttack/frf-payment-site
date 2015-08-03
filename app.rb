@@ -27,7 +27,8 @@ use Rack::Locale
 # Settings
 set :session_secret, 'fredrochefoundationsecret2015'
 set :api_client, GoCardlessPro::Client.new(
-  access_token: Prius.get(:gocardless_token)
+  access_token: Prius.get(:gocardless_token),
+  environment: :sandbox
 )
 
 # Configuration
@@ -97,9 +98,9 @@ get '/payment_complete' do
   puts redirect_flow_id
 
   # Create customer, customer bank account and mandate
-  completed_redirect_flow = settings.api_client.redirect_flows.complete(redirect_flow_id, 
-    params: { session_token: session[:token] }
-  )
+  completed_redirect_flow = settings.api_client.redirect_flows.
+    complete(redirect_flow_id, params: { session_token: session[:token] }
+    )
 
   mandate = settings.api_client.mandates.get(completed_redirect_flow.links.mandate)
 
