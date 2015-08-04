@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 # Ignore bundler config
 /.bundle
+=======
+.bundle
+>>>>>>> 9a06b7c0db38ceba7c7959f6fefdf092149cc24e
