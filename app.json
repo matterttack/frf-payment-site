@@ -3,11 +3,8 @@
   "description": "A basic application using the GoCardless client to set-up customer mandates and subscriptions for the Fred Roche Foundation",
   "success_url": "/",
   "env": {
-    "GC_API_KEY_ID": {
-      "description": "GoCardless API key"
-    },
-    "GC_API_SECRET": {
-      "description": "GoCardless API secret"
+    "GC_ACCESS_TOKEN": {
+      "description": "GoCardless access token"
     },
     "GC_CREDITOR_ID": {
       "description": "GoCardless Creditor ID"
