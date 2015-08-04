@@ -12,9 +12,9 @@ require 'rack/contrib'
 require 'net/http'
 
 # Load Environment Variables
-Prius.load(:gocardless_token)
-Prius.load(:gc_api_key_secret)
+Prius.load(:gc_access_token)
 Prius.load(:gc_creditor_id)
+Prius.load(:gc_environment)
 
 PACKAGE_PRICES = {
   "standard" => { "GBP" => 15, "EUR" => 19 },
@@ -27,7 +27,8 @@ use Rack::Locale
 # Settings
 set :session_secret, 'fredrochefoundationsecret2015'
 set :api_client, GoCardlessPro::Client.new(
-  access_token: Prius.get(:gocardless_token)
+  access_token: Prius.get(:gc_access_token),
+  environment: Prius.get(:gc_environment).to_sym
 )
 
 # Configuration
@@ -92,14 +93,9 @@ get '/payment_complete' do
   redirect_flow_id = params[:redirect_flow_id]
   price = PACKAGE_PRICES.fetch(package)
 
-  # Complete the redirect flow
-  puts session[:token]
-  puts redirect_flow_id
-
   # Create customer, customer bank account and mandate
   completed_redirect_flow = settings.api_client.redirect_flows.
-    complete(redirect_flow_id, params: { session_token: session[:token] }
-    )
+    complete(redirect_flow_id, params: { session_token: session[:token] })
 
   mandate = settings.api_client.mandates.get(completed_redirect_flow.links.mandate)
 
