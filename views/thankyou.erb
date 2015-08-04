@@ -1,0 +1,33 @@
+<div class="header" style="border-bottom: 3px solid #dddddd">
+  <div class="container">
+    <h4><a href="http://www.fredrochefoundation.org.uk" style="text-decoration:none; color:inherit;">FRED ROCHE FOUNDATION</a></h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+
+      <h1 class="page-heading centered"><%= I18n.t(:purchase_complete, scope: [:thankyou]) %></h1>
+      <p class="thankyou-heading centered">
+        <%= I18n.t(:thankyou, scope: [:thankyou]) %>
+      </p>
+      <p>
+        <%= I18n.t(:dd_explanation, scope: [:thankyou], amount: @price) %><br/>
+      </p>
+      <p>
+      <%= I18n.t(:first_payment, scope: [:thankyou], date: @first_payment_date) %>
+      </p>
+      <br/>
+      <a href="/" class="btn btn--hollow"><%= I18n.t(:additional_subscription, scope: [:thankyou]) %></a>
+      <br><br>
+      <a href="http://www.fredrochefoundation.org.uk" class="btn btn--hollow"><%= I18n.t(:return, scope: [:thankyou]) %></a>
+    <hr/>
+  </div>
+
+  <footer>
+    <center>
+      <%= I18n.t(:breadcrumb) %>
+    </center>
+  </footer>
+</div>

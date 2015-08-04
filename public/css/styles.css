@@ -1,0 +1,82 @@
+/*/* import Motserrat */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
+
+
+body {
+  padding-top: 0px;
+font-family: 'Montserrat', Arial, sans-serif;
+  padding-bottom: 20px;
+}
+
+.main {
+  padding: 40px 15px;
+}
+
+.page-heading {
+    margin-bottom: 12px;
+    color: #141E27;
+    font-weight: 400;
+    font-size: 36px;
+    margin-top: 36px
+}
+
+.option-heading {
+    margin-bottom: 12px;
+    color: #141E27;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 36px
+}
+
+.thankyou-heading {
+	margin-bottom: 20px;
+    color: #141E27;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.product-image {
+  height: 250px;
+}
+.divider {
+	height: 50px;
+}
+
+.outline {
+	outline: 1px solid #e5e5e5;
+	padding-bottom: 10px;
+	background-color: #e5e5e5;
+}
+
+.btn {
+	display: inline-block;
+    vertical-align: middle;
+    padding: 0 25px;
+
+    line-height: 43px;
+    min-height: 43px;
+    white-space: nowrap;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #498EE0;
+    border-color: #498EE0;
+    border-radius: 3px;
+    color: #009966;
+    font-size: 12px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase
+}
+
+.btn--hollow {
+    border-color: #009966;
+    background: 0 0
+}

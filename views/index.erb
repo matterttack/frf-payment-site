@@ -1,0 +1,64 @@
+<div class="header" style="border-bottom: 3px solid #dddddd">
+  <div class="container">
+    <h4><a href="http://www.fredrochefoundation.org.uk" style="text-decoration:none; color:inherit;">FRED ROCHE FOUNDATION</a></h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-heading centered"><%= I18n.t("tag_line") %></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="divider">
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="centered"><%= I18n.t("price_standard") %>
+      <%= I18n.t("price_concession") %></p>
+      
+      <p class="centered"><%= I18n.t("explanation") %></p>      
+    </div>
+  </div>
+  <div class="row">
+    <div class="divider">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4 outline">
+      <h3 class="option-heading centered"><%= I18n.t(:name, scope: [:packages, :standard]) %></h3>
+      <p class="centered"><%= I18n.t(:details, scope: [:packages, :standard]) %></p>
+      <form action='/purchase' method='post' class="form">
+        <input type="hidden" name="package" value="standard"/>
+        <input type="submit" class="btn btn--hollow btn-block" href="#" role="button" value="<%= I18n.t(:button_val, amount: @prices[:standard]) %>" />
+      </form>
+    </div>
+        <div class="col-md-2"></div>
+    <div class="col-md-4 outline">
+      <h2 class="option-heading centered"><%= I18n.t(:name, scope: [:packages, :concession]) %></h2>
+      <p class="centered"><%= I18n.t(:description, scope: [:packages, :concession]) %></p><br>
+      <form action='/purchase' method='post' class="form">
+        <input type="hidden" name="package" value="concession"/>
+        <input type="submit" class="btn btn--hollow btn-block" href="#" role="button" value="<%= I18n.t(:button_val, amount: @prices[:concession]) %>" />
+      </form>
+    </div>
+        <div class="col-md-1"></div>
+  </div>
+    <div class="row">
+    <div class="divider">
+    </div>
+  </div>
+  <hr/>
+  <footer>
+    <center>
+      <%= I18n.t(:breadcrumb) %>
+    </center>
+  </footer>
+
+</div>

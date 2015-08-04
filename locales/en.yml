@@ -1,0 +1,23 @@
+en:
+  tag_line: Become a friend of the Fred Roche Foundation
+  price_standard: Annual subscription is £15, additional family members will be charged at £5.
+  price_concession: Over 65 and students between the ages of 18 and 25 will be £5. 
+  explanation: To become a friend of the Fred Roche Foundation, please choose your subscription below, and fill in your details. We currently only accept subscription via Direct Debit. We will debit your account on an annual basis from the date you subscribe, and you will receive an email confirming the amount. Please contact us if your details have changed or you would like to cancel your subscription.
+  button_val: Subscribe for %{amount} a year
+  breadcrumb: This transaction is undertaken by GoCardless on behalf of the Fred Roche Foundation.
+  package_description: Annual subscription (%{package})
+  packages:
+    standard:
+      name: Standard
+      details: You will receive completementay copies of publications, newsletters and papers produced by the foundation, and notice of events.
+    concession:
+      name: Concession
+      description: A reduced rate for students, individuals aged 65+, and additional family members.
+  thankyou:
+    purchase_description: Your annual subscription (%{package}) was successful.
+    purchase_complete: Subscription Complete
+    thankyou: Thank you for becomming a friend of the Fred Roche Foundation
+    dd_explanation: We've set up a direct debit and a subscription for %{amount}/year, you should receive an email confirming this shortly.
+    first_payment: Your first payment will be billed on %{date}
+    additional_subscription: Add additional family members
+    return: Return to Fred Roche Foundation
