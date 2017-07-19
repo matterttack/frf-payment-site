@@ -3,15 +3,13 @@ GEM
   specs:
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
-    git-version-bump (0.15.1)
     gocardless_pro (1.0.1)
       faraday (>= 0.8.9, < 0.10)
     i18n (0.7.0)
     multipart-post (2.0.0)
     prius (0.2.0)
-    rack (1.6.4)
-    rack-contrib (1.4.0)
-      git-version-bump (~> 0.15)
+    rack (1.6.8)
+    rack-contrib (1.5.0)
       rack (~> 1.4)
     rack-protection (1.5.3)
       rack
