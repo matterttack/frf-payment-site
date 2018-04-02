@@ -9,11 +9,11 @@ GEM
     i18n (0.7.0)
     multipart-post (2.0.0)
     prius (0.2.0)
-    rack (1.6.4)
+    rack (1.6.9)
     rack-contrib (1.4.0)
       git-version-bump (~> 0.15)
       rack (~> 1.4)
-    rack-protection (1.5.3)
+    rack-protection (1.5.5)
       rack
     shotgun (0.9.1)
       rack (>= 1.0)
