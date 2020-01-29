@@ -1,13 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    faraday (0.9.1)
+    faraday (0.17.3)
       multipart-post (>= 1.2, < 3)
     git-version-bump (0.15.1)
-    gocardless_pro (1.0.1)
-      faraday (>= 0.8.9, < 0.10)
+    gocardless_pro (2.16.0)
+      faraday (>= 0.9.2, < 1.0)
     i18n (0.7.0)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     prius (0.2.0)
     rack (1.6.4)
     rack-contrib (1.4.0)
